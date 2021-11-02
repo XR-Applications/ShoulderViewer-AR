@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class AudioControl : MonoBehaviour
 {
+    [SerializeField] AudioClip buttonPressFX;
+
+    AudioSource audioSource;
+
+  
+
     public static AudioControl instance;
     public static AudioControl Instance
     {
@@ -24,7 +30,16 @@ public class AudioControl : MonoBehaviour
 
     private void Awake()
     {
+        if(instance)
+        {
+            Destroy(gameObject);
+        }
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
 
+    public void PlayButtonFX()
+    {
+        audioSource.PlayOneShot(buttonPressFX);    
+    }
 }

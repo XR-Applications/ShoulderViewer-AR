@@ -1026,6 +1026,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2509393594472625900, guid: 0a980be015f017444bb79606fef6c639, type: 3}
+      propertyPath: m_Volume
+      value: 0.344
+      objectReference: {fileID: 0}
     - target: {fileID: 2509393594472625901, guid: 0a980be015f017444bb79606fef6c639, type: 3}
       propertyPath: m_Name
       value: AudioControl
@@ -1113,6 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae26a086087c37a488ec260fef034821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressFX: {fileID: 8300000, guid: 431c881bc339f1b49b0a3ab40b497382, type: 3}
 --- !u!1 &2023065069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,18 +1489,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6783186119119412721}
-  m_LocalRotation: {x: 0, y: 0, z: -0.0007767275, w: 0.9999997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5229254187317407574}
   m_Father: {fileID: 899954192}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.089}
-  m_AnchorMin: {x: 0.015104168, y: 0.88159263}
-  m_AnchorMax: {x: 0.058000002, y: 0.9657408}
-  m_AnchoredPosition: {x: 0, y: 0.0000019073486}
-  m_SizeDelta: {x: 0.0000009536743, y: -0.0000038146973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.015104168, y: 0.87500006}
+  m_AnchorMax: {x: 0.061000004, y: 0.97200006}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0.000030517578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5979841084188135518
 MonoBehaviour:
